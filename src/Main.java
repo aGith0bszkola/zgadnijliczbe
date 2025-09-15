@@ -31,6 +31,11 @@ public class Main {
         //wpisywanie z kalwiaury
         Scanner scanner = new Scanner(System.in);
         int wpisanaLiczba = scanner.nextInt();
-        System.out.println("wpisono" +wpisanaLiczba);
+        System.out.println("wpisono " +wpisanaLiczba);
+        if (wylosowanaLiczba == wpisanaLiczba){
+            System.out.println("zgadłeś");
+        }else{
+            System.out.println("nie zgadles1");
+        }
     }
 }
