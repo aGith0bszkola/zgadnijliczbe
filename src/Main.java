@@ -37,5 +37,14 @@ public class Main {
         }else{
             System.out.println("nie zgadles1");
         }
+        int roznica;
+        if(wylosowanaLiczba>wpisanaLiczba){
+            roznica = wylosowanaLiczba - wpisanaLiczba;
+        }else{
+            roznica = wpisanaLiczba - wylosowanaLiczba;
+        }
+        //wyrażenie warunkowe-> zwraca wartość
+        roznica = wpisanaLiczba>wylosowanaLiczba?wpisanaLiczba - wylosowanaLiczba:wylosowanaLiczba>wpisanaLiczba?wylosowanaLiczba - wpisanaLiczba;
+        System.out.println(roznica);
     }
 }
