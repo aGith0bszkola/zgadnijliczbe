@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
@@ -77,5 +78,25 @@ public class Main {
                     default -> "sproboj innym razem";
                 }
         );
+        // zgadujemy wiecej razy
+        // np. 10
+        //lsowoanie 2 sposob
+        Random random = new Random();
+        int wylsowanaWartosc = random.nextInt(1,101);
+        //petla for
+        for (int i = 0; i < 10; i++) {
+            System.out.println("Podaj liczbe");
+            wpisanaLiczba = scanner.nextInt();
+            if (wpisanaLiczba == wylsowanaWartosc){
+                System.out.println("brawo!");
+                break;
+        } else if (wpisanaLiczba > wylsowanaWartosc) {
+                System.out.println("wpisano za duzp");
+
+            }else {
+                System.out.println("wpisano za mało50");
+            }
+
+        }
     }
 }
